@@ -133,7 +133,7 @@ sns.countplot(y='state', data=breweries)
 
 
     
-![png](output_5_1.png)
+![png](state_plot.png)
     
 
 
@@ -146,7 +146,7 @@ plot = sns.countplot(x='brewery_type', data=breweries)
 
 
     
-![png](output_7_0.png)
+![png](type_plot.png)
     
 
 
