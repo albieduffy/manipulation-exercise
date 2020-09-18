@@ -1,40 +1,11 @@
 ## Types of Breweries across USA
 
 
-```python
-import requests
-import numpy as np
-import pandas as pd
-import seaborn as sns
-```
-
 ### Example of data set
 
 
 
-```python
-breweries = pd.read_csv('breweries.csv')
-breweries.dropna(axis=1,inplace=True)
-breweries.head()
-```
-
-
-
-
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -122,7 +93,6 @@ breweries.head()
 
 ```python
 state_plot = sns.countplot(y='state', data=breweries)
-state_plot.figure.savefig('state_plot.png')
 ```
 
 
@@ -136,7 +106,6 @@ state_plot.figure.savefig('state_plot.png')
 
 ```python
 type_plot = sns.countplot(x='brewery_type', data=breweries)
-type_plot.figure.savefig('type_plot.png')
 ```
 
 
