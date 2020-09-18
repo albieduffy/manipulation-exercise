@@ -121,15 +121,9 @@ breweries.head()
 
 
 ```python
-sns.countplot(y='state', data=breweries)
+state_plot = sns.countplot(y='state', data=breweries)
+state_plot.figure.savefig('state_plot.png')
 ```
-
-
-
-
-    <AxesSubplot:xlabel='count', ylabel='state'>
-
-
 
 
     
@@ -141,7 +135,8 @@ sns.countplot(y='state', data=breweries)
 
 
 ```python
-plot = sns.countplot(x='brewery_type', data=breweries)
+type_plot = sns.countplot(x='brewery_type', data=breweries)
+type_plot.figure.savefig('type_plot.png')
 ```
 
 
